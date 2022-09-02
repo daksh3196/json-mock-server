@@ -1,16 +1,382 @@
 {
-  "posts":[
+    "foods": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "id": 1,
+      "category" : "fat-free",
+      "name" : "Fish"
+    },
+    {
+      "id": 2,
+      "category" : "vegan",
+      "name" : "Legumes"
+    },
+    {
+      "id": 3,
+      "category" : "fat-free",
+      "name" : "Cereals"
+    },
+    {
+      "id": 4,
+      "category" : "vegan",
+      "name" : "Tofu"
+    },
+    {
+      "id": 5,
+      "category" : "fat-free",
+      "name" : "English Muffins"
     }
   ],
-  "comments" : [
+  "users": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "email": "daksh@gmail.com",
+      "password": "$2a$10$tJll8wvGleMNWEx0v9W9lOJMKFVQ9ng6BEWS5cpccvBDxWfh14Xjm",
+      "name": "Daksh Taneja",
+      "age": 25,
+      "id": 1
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$/CNrA7cEBaG9Akfdku4qveXjxWxeGj4alne5GUoXQ2mL2cht/xfFG",
+      "id": 2
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "courseName": "Frontend with React",
+      "author": "Daksh",
+      "price": 15000
+    },
+    {
+      "id": 2,
+      "courseName": "Backedn with Node.Js",
+      "author": "Daksh",
+      "price": 12000
+    },
+    {
+      "id": 3,
+      "courseName": "Full Stack - MERN Stack",
+      "author": "Daksh",
+      "price": 20000
+    }
+  ],
+  "enquiries": [
+    {
+      "linkedCourse": {
+        "id": 1,
+        "name": "Frontend with React"
+      },
+      "email": "daksh@gmail.com",
+      "enquiry": "TEST",
+      "id": 1
+    },
+    {
+      "linkedCourse": {
+        "id": "2",
+        "name": "Backedn with Node.Js"
+      },
+      "email": "test@test.com",
+      "enquiry": "hello",
+      "id": 2
+    },
+    {
+      "linkedCourse": {
+        "id": 1,
+        "name": "Frontend with React"
+      },
+      "email": "testt@xya.com",
+      "enquiry": "fiornf",
+      "id": 3
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Thor",
+      "image": "1.jpg",
+      "genre": "Action, Adenture, comedy",
+      "director": "Taika Waititi",
+      "stars": "Chris Hemsworth, Tom Hiddleston, Cate Blanchett, Mark Ruffalo",
+      "plot": "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+      "currency": "THB",
+      "show_start_date": "2017-08-20T12:23:34Z",
+      "show_end_date": "2017-08-29T12:23:34Z",
+      "show_timings": [
+        "12PM-3PM",
+        "3PM-6PM",
+        "6PM-9PM",
+        "9PM-12AM"
+      ],
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      },
+      "release_date": "2017-08-20T12:23:34Z",
+      "duration": 117,
+      "ratings": 9
+    },
+    {
+      "id": 2,
+      "title": "Wonder woman",
+      "genre": "Action, Adenture, Fantasy",
+      "director": "Patty Jenkins",
+      "stars": "Gal Gadot, Chris Pine, Robin Wright, Lucy Davis",
+      "plot": "When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.",
+      "image": "2.jpg",
+      "currency": "THB",
+      "show_start_date": "2017-08-20T12:23:34Z",
+      "show_end_date": "2017-08-29T12:23:34Z",
+      "show_timings": [
+        "12PM-3PM",
+        "3PM-6PM",
+        "6PM-9PM",
+        "9PM-12AM"
+      ],
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      },
+      "release_date": "2017-08-20T12:23:34Z",
+      "duration": 117,
+      "ratings": 9
+    },
+    {
+      "id": 3,
+      "title": "Logan",
+      "genre": "Action, Drama, Sci-Fi",
+      "director": "James Mangold ",
+      "stars": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",
+      "plot": "In the near future, a weary Logan cares for an ailing Professor X, somewhere on the Mexican border. However, Logan's attempts to hide from the world, and his legacy, are upended when a young mutant arrives, pursued by dark forces.",
+      "image": "3.jpg",
+      "currency": "THB",
+      "show_start_date": "2017-08-20T12:23:34Z",
+      "show_end_date": "2017-08-29T12:23:34Z",
+      "show_timings": [
+        "12PM-3PM",
+        "3PM-6PM",
+        "6PM-9PM",
+        "9PM-12AM"
+      ],
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      },
+      "release_date": "2017-08-20T12:23:34Z",
+      "duration": 117,
+      "ratings": 9
+    },
+    {
+      "id": 4,
+      "title": "Despicable me 3",
+      "genre": "Action, Drama, Sci-Fi",
+      "director": "James Mangold ",
+      "stars": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",
+      "plot": "Gru meets his long-lost charming, cheerful, and more successful twin brother Dru who wants to team up with him for one last criminal heist.",
+      "image": "4.jpg",
+      "currency": "THB",
+      "show_start_date": "2017-08-20T12:23:34Z",
+      "show_end_date": "2017-08-31T12:23:34Z",
+      "show_timings": [
+        "12PM-3PM",
+        "3PM-6PM",
+        "6PM-9PM",
+        "9PM-12AM"
+      ],
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      },
+      "release_date": "2017-08-20T12:23:34Z",
+      "duration": 117,
+      "ratings": 9
+    },
+    {
+      "id": 5,
+      "title": "Star war",
+      "genre": "Action, Drama, Sci-Fi",
+      "director": "James Mangold ",
+      "stars": "Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",
+      "plot": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.",
+      "image": "5.jpg",
+      "currency": "THB",
+      "show_start_date": "2017-08-20T12:23:34Z",
+      "show_end_date": "2017-08-29T12:23:34Z",
+      "show_timings": [
+        "12PM-3PM",
+        "3PM-6PM",
+        "6PM-9PM",
+        "9PM-12AM"
+      ],
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      },
+      "release_date": "2017-08-20T12:23:34Z",
+      "duration": 117,
+      "ratings": 9
+    },
+    {
+      "id": 6,
+      "title": "Pitch Perfect 3",
+      "genre": "Animation, Action, Adventure",
+      "director": "Trish Sie",
+      "stars": "Anna Kendrick, Rebel Wilson, Brittany Snow, Anna Camp",
+      "plot": "Following their win at the world championship, the now separated Bellas reunite for one last singing competition at an overseas USO tour, but face a group who uses both instruments and voices.",
+      "image": "6.jpg",
+      "currency": "THB",
+      "show_start_date": "2017-08-20T12:23:34Z",
+      "show_end_date": "2017-08-29T12:23:34Z",
+      "show_timings": [
+        "12PM-3PM",
+        "3PM-6PM",
+        "6PM-9PM",
+        "9PM-12AM"
+      ],
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      },
+      "release_date": "2017-08-20T12:23:34Z",
+      "duration": 117,
+      "ratings": 9
+    },
+    {
+      "id": 7,
+      "title": "Opération casse-noisette 2",
+      "genre": "Animation, Action, Adventure",
+      "director": "Cal Brunker",
+      "stars": "Will Arnett, Maya Rudolph, Bobby Cannavale, Bobby Moynihan",
+      "plot": "Following the events of the first film, Surly and his friends must stop Oakton City's mayor from destroying their home to make way for a dysfunctional amusement park.",
+      "image": "7.jpg",
+      "currency": "THB",
+      "show_start_date": "2017-08-20T12:23:34Z",
+      "show_end_date": "2017-08-29T12:23:34Z",
+      "show_timings": [
+        "12PM-3PM",
+        "3PM-6PM",
+        "6PM-9PM",
+        "9PM-12AM"
+      ],
+      "prices": {
+        "normal": 200,
+        "superior": 300,
+        "sofa": 600
+      },
+      "release_date": "2017-08-20T12:23:34Z",
+      "duration": 117,
+      "ratings": 9
+    }
+  ],
+  "transactions": [
+    {
+      "movieId": 3,
+      "movieName": "Logan",
+      "seats_booked": "1",
+      "booking_date": "22nd Aug",
+      "booking_time_slot": "6PM-9PM",
+      "id": 4
+    },
+    {
+      "movieId": 1,
+      "movieName": "Thor",
+      "seats_booked": "11",
+      "booking_date": "26th Aug",
+      "booking_time_slot": "6PM-9PM",
+      "id": 6
+    },
+    {
+      "movieId": 2,
+      "movieName": "Wonder woman",
+      "seats_booked": "2",
+      "booking_date": "29th Aug",
+      "booking_time_slot": "6PM-9PM",
+      "id": 7
+    },
+    {
+      "movieId": 6,
+      "movieName": "Pitch Perfect 3",
+      "seats_booked": "2",
+      "booking_date": "23rd Aug",
+      "booking_time_slot": "9PM-12AM",
+      "id": 8
+    },
+    {
+      "movieId": 4,
+      "movieName": "Despicable me 3",
+      "seats_booked": "3",
+      "booking_date": "21st Aug",
+      "booking_time_slot": "3PM-6PM",
+      "id": 9
+    },
+    {
+      "movieId": 7,
+      "movieName": "Opération casse-noisette 2",
+      "seats_booked": "10",
+      "booking_date": "29th Aug",
+      "booking_time_slot": "9PM-12AM",
+      "id": 10
+    },
+    {
+      "movieId": 6,
+      "movieName": "Pitch Perfect 3",
+      "seats_booked": "88",
+      "booking_date": "29th Aug",
+      "booking_time_slot": "9PM-12AM",
+      "id": 11
+    },
+    {
+      "movieId": 6,
+      "movieName": "Pitch Perfect 3",
+      "seats_booked": "77",
+      "booking_date": "22nd Aug",
+      "booking_time_slot": "12PM-3PM",
+      "id": 12
+    },
+    {
+      "movieId": 2,
+      "movieName": "Wonder woman",
+      "seats_booked": "100",
+      "booking_date": "24th Aug",
+      "booking_time_slot": "3PM-6PM",
+      "id": 13
+    },
+    {
+      "movieId": 4,
+      "movieName": "Despicable me 3",
+      "seats_booked": "101",
+      "booking_date": "24th Aug",
+      "booking_time_slot": "9PM-12AM",
+      "id": 14
+    },
+    {
+      "movieId": 5,
+      "movieName": "Star war",
+      "seats_booked": "80",
+      "booking_date": "28th Aug",
+      "booking_time_slot": "9PM-12AM",
+      "id": 15
+    },
+    {
+      "movieId": 2,
+      "movieName": "Wonder woman",
+      "seats_booked": "3",
+      "booking_date": "20th Aug",
+      "booking_time_slot": "12PM-3PM",
+      "id": 16
+    },
+    {
+      "movieId": 2,
+      "movieName": "Wonder woman",
+      "seats_booked": "3",
+      "booking_date": "20th Aug",
+      "booking_time_slot": "12PM-3PM",
+      "id": 17
     }
   ]
 }
